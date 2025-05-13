@@ -12,6 +12,7 @@ IF "%MODE%"=="development" GOTO DEV
 echo Starting DeerFlow in [PRODUCTION] mode...
 uv run server.py
 cd web
+pnpm build
 pnpm start
 GOTO END
 

@@ -12,5 +12,5 @@ if [ "$1" = "--dev" -o "$1" = "-d" -o "$1" = "dev" -o "$1" = "development" ]; th
 else
   echo -e "Starting DeerFlow in [PRODUCTION] mode...\n"
   uv run server.py
-  cd web && pnpm start
+  cd web && pnpm build && pnpm start
 fi
